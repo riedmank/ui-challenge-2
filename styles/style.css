@@ -1,0 +1,68 @@
+body {
+  font-family: arial;
+  font-size: 1.5em;
+  color: #606060;
+  font-weight: bold;
+}
+
+input[type=text]:focus {
+  
+}
+
+input.input-validation-error,
+textarea.input-validation-error,
+select.input-validation-error
+{
+  border: 1px solid #CD0A0A;
+}
+
+/* future dropdown styling */
+
+input[type=radio], input[type=checkbox] {
+  visibility: hidden;
+}
+
+input[type=checkbox] + label {
+  display: inline-block;
+  background: url("../img/form-elements-sprite.png") no-repeat -158px -239px;
+  width: 160px;
+  height: 160px;
+}
+
+input[type=checkbox]:checked + label {
+  display: inline-block;
+  background: url("../img/form-elements-sprite.png") no-repeat -381px -239px;
+  width: 160px;
+  height: 160px;
+}
+
+input[type=radio] + label {
+  display: inline-block;
+  background: url("../img/form-elements-sprite.png") no-repeat -582px -239px;
+  width: 170px;
+  height: 170px;
+}
+
+input[type=radio]:checked + label {
+  display: inline-block;
+  background: url("../img/form-elements-sprite.png") no-repeat -812px -239px;
+  width: 170px;
+  height: 170px;
+}
+
+input[type=submit] {
+  font-family: inherit;
+  color: #606060;
+  font-weight: bold;
+  padding: 10px 50px;
+  border-radius: 2px;
+}
+
+input[type=submit]:active {
+  font-family: inherit;
+  background-color: #424242;
+  color: #d6d6d6;
+  font-weight: bold;
+  padding: 10px 50px;
+  border-radius: 2px;
+}
