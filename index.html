@@ -5,40 +5,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>UI Challenge</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
 </head>
 <body>
   <h1>UI Challenge - Custom Form Elements</h1>
   <form>
-    <label>
-      <p>text input</p>
-      <input type="text" value="placeholder text">
-    </label>
-    <label>
-      <p>select box</p>
-      <select class="select">
-        <option value="" selected disabled hidden>please select an option...</option>
+    
+    <p>text input</p>
+    <input type="text" value="placeholder text">
+    
+    
+    <p>select box</p>
+    <div class="custom-select">
+      <select>
+        <option value="" selected disabled hidden class="select1">please select an option...</option>
         <option value="option 1">option 1</option>
         <option value="option 2">option 2</option>
         <option value="option 3">option 3</option>
         <option value="option 4">option 4</option>
         <option value="option 5">option 5</option>
       </select>
-    </label>
-    <label class="checkbox">
-      <p>checkbox</p>
-      <input type="checkbox">
-      <input type="checkbox"  checked>
-    </label>
-    <label class="radio">
-      <p>radio</p>
-      <input type="radio" name="radio">
-      <input type="radio" name="radio" checked>
-    </label>
+    </div>
+
+    <p>checkbox</p>
+    <input type="checkbox" id="check1" name="checkbox-sprite">
+    <label for="check1"></label>
+    <input type="checkbox" id="check2" name="checkbox-sprite" checked>
+    <label for="check2"></label>
+    
+    <p>radio</p>
+    <input type="radio" id="radio1" name="radio">
+    <label for="radio1"></label>
+    <input type="radio" id="radio2" name="radio" checked>
+    <label for="radio2"></label>
     <p>buttons</p>
-    <label>
-      <input type="submit" value="submit">
-    </label>
+    
+    <input type="submit" value="submit">
+    
   </form>
 </body>
 </html>
