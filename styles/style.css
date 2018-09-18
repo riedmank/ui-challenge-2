@@ -5,18 +5,18 @@ body {
   font-weight: bold;
 }
 
-input[type=text]:focus {
-  
-}
-
-input.input-validation-error,
-textarea.input-validation-error,
-select.input-validation-error
+input[type=text]:invalid
 {
   border: 1px solid #CD0A0A;
 }
 
-/* future dropdown styling */
+option {
+  background-color: #d6d6d6;
+}
+
+option:nth-child(odd) {
+  background-color: #606060;
+}
 
 input[type=radio], input[type=checkbox] {
   visibility: hidden;
